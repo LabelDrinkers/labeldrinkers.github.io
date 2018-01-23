@@ -11,7 +11,7 @@
 @media only screen
 and (max-width : 414px) and (orientation : portrait) {
 .text {margin-left:-30%;}
-img.img {width:300px;margin-top:30%}
+img.img {width:200px;margin-top:20%}
 }
 
 html,
