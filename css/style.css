@@ -1,0 +1,39 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@font-face {
+    font-family: 'slopnessmedium';
+    src: url('slopness-webfont.woff2') format('woff2'),
+         url('slopness-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,
+body {
+  font-family: 'slopnessmedium', monospace;
+  background: #212121 FAFAFA;
+  height: 99%;
+}
+.container {
+  height: 100%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  width: 50%;
+  font-weight: 100;
+  font-size: 36px;
+  color: #212121;
+  overflow: hidden;
+}
+.dud {
+  color: #757575;
+}
+.img {
+  width: 20%;
+  margin-left:30%;
+  z-index:-1;
+  position:absolute;
+}
+
