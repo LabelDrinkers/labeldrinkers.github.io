@@ -78,7 +78,7 @@ var TextScramble = function () {
   return TextScramble;
 }();
 
-var phrases = ['I only drink Champagne on two occasions. When I´m in love and when I´m not.<br /> - Coco Chanel','<b>Label Drinkers</b>', 'An Extraordinaire Global Series','Featuring','One senior Creative Head Sommelier and Decanter World Wine Awards Judge','One wannabe Drink Wizard with NameWSET Level 4 Diploma','Coming 2018','When drinking is not a game.<br />But bloody serious.<br />- The Authors','<a href=" mailto:partnerships@labeldrinkers.com" target="_new">partnerships@labeldrinkers.com</a>'];
+var phrases = ['I only drink Champagne on two occasions. When I´m in love and when I´m not.<br /> <b>- Coco Chanel</b>','<b>Label Drinkers</b>', 'An Extraordinaire Global Series','<b>Featuring</b>','One senior Creative Head Sommelier and Decanter World Wine Awards Judge','One wannabe Drink Wizard with NameWSET Level 4 Diploma','<b>Coming 2018</b>','When drinking is not a game.<br />But bloody serious.<br /><b>- The Authors</b>','<a href=" mailto:partnerships@labeldrinkers.com" target="_new"><b>partnerships</b>@labeldrinkers.com</a>'];
 
 
 var el = document.querySelector('.text');
@@ -87,7 +87,7 @@ var fx = new TextScramble(el);
 var counter = 0;
 var next = function next() {
   fx.setText(phrases[counter]).then(function () {
-    setTimeout(next, 4800);
+    setTimeout(next, 7200);
   });
   counter = (counter + 1) % phrases.length;
 };
