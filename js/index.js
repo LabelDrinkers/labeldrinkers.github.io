@@ -78,7 +78,7 @@ var TextScramble = function () {
   return TextScramble;
 }();
 
-var phrases = ['I only drink Champagne on two occasions. When I´m in love and when I´m not.<br /> <b>- Coco Chanel</b>','<b>Label Drinkers</b>', 'An Extraordinaire Global Series','<b>Featuring</b>','One senior Creative Head Sommelier and Decanter World Wine Awards Judge','One wannabe Drink Wizard with NameWSET Level 4 Diploma','<b>Coming 2018</b>','When drinking is not a game.<br />But bloody serious.<br /><b>- The Authors</b>','<a href=" mailto:partnerships@labeldrinkers.com" target="_new"><b>partnerships</b>@labeldrinkers.com</a>'];
+var phrases = ['I drink champagne when I win, to celebrate…And I drink champagne when I lose, to console myself.<br /><b>- Napoleon Bonaparte</b>','<b>Label Drinkers</b>', 'An Extraordinaire Global Series','<b>Featuring</b>','One senior Creative Head Sommelier and Decanter World Wine Awards Judge','One wannabe Drink Wizard with NameWSET Level 4 Diploma','Traveling the world, unlocking the myths, facts and legends of the most admired beverage of them all - Champagne','<b>Coming 2018</b>','When drinking is not a game.<br />But bloody serious.<br /><b>- The Authors</b>','<a href=" mailto:partnerships@labeldrinkers.com" target="_new"><b>partnerships</b>@labeldrinkers.com</a>'];
 
 
 var el = document.querySelector('.text');
