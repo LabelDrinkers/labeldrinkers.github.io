@@ -32,10 +32,11 @@ a {text-decoration:none;color:black}
 }
 .text {
   width: 50%;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 36px;
   color: #212121;
   overflow: hidden;
+  text-shadow: 1px 0px 1px black; 
 }
 .dud {
   color: #aeaeae;
