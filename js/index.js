@@ -78,7 +78,7 @@ var TextScramble = function () {
   return TextScramble;
 }();
 
-var phrases = ['I drink champagne when I win, to celebrate…And I drink champagne when I lose, to console myself.<br />- Napoleon Bonaparte','Label Drinkers', 'An Extraordinaire Global Series','Featuring','One senior Creative Head Sommelier and Decanter World Wine Awards Judge','One wannabe Drink Wizard with NameWSET Level 4 Diploma','Traveling the world, unlocking the myths, facts and legends of the most admired beverage of them all - Champagne','Coming 2018','When drinking is not a game.<br />But bloody serious.<br />- The Authors','<a href=" mailto:partnerships@labeldrinkers.com" target="_new">partnerships@labeldrinkers.com</a>'];
+var phrases = ['I drink champagne when I win, to celebrate…And I drink champagne when I lose, to console myself.<br />- Napoleon Bonaparte','Label Drinkers', 'An Extraordinaire Global Series','Featuring','One senior Creative Head Sommelier and Decanter World Wine Awards Judge','One wannabe Drink Wizard with NameWSET Level 4 Diploma','Traveling the world, unlocking the myths, facts and legends of the most admired beverage of them all - Champagne','Coming 2018','When drinking is not a game.<br />But bloody serious.<br />- The Authors'];
 
 
 var el = document.querySelector('.text');

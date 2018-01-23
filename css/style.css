@@ -10,15 +10,20 @@
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (max-width : 414px) and (orientation : portrait) {
-.text {margin-left:-30%;overflow: visible;
-}
-img.img {width:200px;margin-top:20%}
+.text {margin-left:-30%;padding:0}
+.container {margin:0;width:100% !important;}
+body {margin:0;padding:0;background-size:40% !important; background-position: right 10% center !important;}
 }
 
 html,
 body {
   font-family: 'slopnessmedium', monospace;
   background: #212121 FAFAFA;
+  background-image: url('../sketch.jpg');
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-attachment: fixed;
+  background-position: right 20% center;
   height: 99%;
 }
 
@@ -30,22 +35,17 @@ a {text-decoration:none;color:black}
   justify-content: center;
   align-items: center;
   display: flex;
-  overflow: hidden;
 }
 .text {
   width: 50%;
   font-weight: 400;
   font-size: 36px;
   color: #212121;
-  text-shadow: 1px 0px 1px black; 
+  overflow: hidden;
+  text-shadow: 1px 0px 0px black; 
 }
 .dud {
   color: #aeaeae;
 }
-.img {
-  width: 20%;
-  margin-left:30%;
-  z-index:-1;
-  position:absolute;
-}
+
 
