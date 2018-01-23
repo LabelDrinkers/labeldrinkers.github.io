@@ -78,7 +78,7 @@ var TextScramble = function () {
   return TextScramble;
 }();
 
-var phrases = ['I only drink Champagne on two occasions. When I´m in love and when I´m not.<br /> - Coco Chanel','<u>Label Drinkers</u>', 'A Global Series', 'Coming 2018','When drinking is not a game.<br />But bloody serious.<br />- The Authors'];
+var phrases = ['I only drink Champagne on two occasions. When I´m in love and when I´m not.<br /> - Coco Chanel','Label Drinkers', 'A Global Series', 'Coming 2018','When drinking is not a game.<br />But bloody serious.<br />- The Authors'];
 
 
 var el = document.querySelector('.text');
