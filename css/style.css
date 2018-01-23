@@ -10,7 +10,8 @@
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (max-width : 414px) and (orientation : portrait) {
-.text {margin-left:-30%;}
+.text {margin-left:-30%;overflow: visible;
+}
 img.img {width:200px;margin-top:20%}
 }
 
@@ -29,13 +30,13 @@ a {text-decoration:none;color:black}
   justify-content: center;
   align-items: center;
   display: flex;
+  overflow: hidden;
 }
 .text {
   width: 50%;
   font-weight: 400;
   font-size: 36px;
   color: #212121;
-  overflow: hidden;
   text-shadow: 1px 0px 1px black; 
 }
 .dud {
