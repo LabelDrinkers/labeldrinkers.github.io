@@ -19,7 +19,7 @@ html,
 body {
   font-family: 'slopnessmedium', monospace;
   background: #000;
-  background-image: url('../sketch3.jpg');
+  background-image: url('../sketch2.jpg');
   background-repeat: no-repeat;
   background-size: 22%;
   background-attachment: fixed;
@@ -54,6 +54,7 @@ input[type=submit] {
     background: #000;
     border:0 none;
     cursor:intial;
+    -webkit-appearance: none;
     -webkit-border-radius: 10px;
     border-radius: 10px; 
 }

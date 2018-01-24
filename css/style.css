@@ -54,6 +54,7 @@ input[type=submit] {
     background: #fff;
     border:0 none;
     cursor:initial;
+    -webkit-appearance: none;
     -webkit-border-radius: 10px;
     border-radius: 10px; 
 }
