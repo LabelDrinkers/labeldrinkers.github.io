@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <title>Label Drinkers™ | A Global Series</title>
       <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" title="white" href="css/style.css">
+<link rel="alternate stylesheet" type="text/css" title="black" href="css/dark.css">
 </head>
-<body>
+<body onload="set_style_from_cookie()">
+<form><input type="submit" onclick="switch_style('black');return false;" name="theme" value="," id="black"><input type="submit" onclick="switch_style('white');return false;" name="theme" value="." id="white"></form>
   <div class="container">
   <div class="text"></div>
 </div>
