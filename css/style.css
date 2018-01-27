@@ -10,38 +10,62 @@
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (max-width : 414px) and (orientation : portrait) {
-.text {margin-left:-30%;padding:0}
-.container {margin:0;width:100% !important;}
-body {margin:0;padding:0;background-size:40% !important; background-position: right 10% center !important;}
+.text {margin-left:-5%;margin-top:-30%; width:100%;}
+img {width: 200px; height: auto; margin-left:40%; margin-top: 30%;}
 }
 
 html,
 body {
   font-family: 'slopnessmedium', monospace;
   background: #212121 FAFAFA;
-  background-image: url('../sketch.jpg');
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 20%;
-  background-attachment: fixed;
-  background-position: right 20% center;
-  height: 99%;
+  min-height: 100%;
+    -moz-animation: blink 40s infinite ease-out; /* Firefox */
+    -webkit-animation: blink 40s infinite ease-out; /* Webkit */
+    -ms-animation: blink 40s infinite ease-out; /* IE */
+    animation: blink 40s infinite ease-out; /* Opera and prob css3 final iteration */
 }
+
+@keyframes blink {
+0%,34% {background-image: none;}
+    35% {background-image: url('../001I.jpg');background-blend-mode: screen;
+
+ }
+36%,92% {background-image: none;}
+
+    94% {background-image: url('../001I.jpg');background-blend-mode: screen;
+ }
+    96% {background-image: url('../002I.jpg');background-blend-mode: screen;
+  }
+    98% {background-image: url('../003I.jpg');background-blend-mode: screen;
+   }
+  100% {background-image: url('../004I.jpg');background-blend-mode: screen;
+}
+
+} 
+
 
 a {text-decoration:none;color:black}
 
 .container {
   height: 100%;
-  width: 80%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
 }
+
+img {width: 250px; height: auto; margin-left:80%; margin-top: 30%;}
+
 .text {
-  width: 50%;
+  width: 40%;
   font-weight: 400;
+  position: absolute;
+  top: 42%;
+  left: 15%;
   font-size: 36px;
   color: #212121;
-  overflow: hidden;
   text-shadow: 1px 0px 0px #111; 
 }
 .dud {
