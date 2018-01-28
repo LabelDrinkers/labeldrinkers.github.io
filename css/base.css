@@ -15,7 +15,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 }
 
-body {
+html,body {
         font-family: 'slopnessmedium';
 	min-height: 100vh;
 	overflow: hidden;
@@ -148,7 +148,7 @@ main {
 
 .slide--current {
 	opacity: 1;
-	pointer-events: auto;
+	pointer-events: none;
 	z-index: 100;
 }
 
@@ -157,20 +157,12 @@ main {
     position: relative;
     display: flex;
     align-items: center;
+    overflow-wrap: break-word;
     justify-content: left;
-    flex-wrap: wrap;
     pointer-events: none;
-    cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    grid-area: title;
     font-size: 2vw;
     font-weight: 400;
-    text-shadow: 1px 0px 0px #111;
+    text-shadow: 1px 0px 0px #010101;
     width: 40vw;
 }
 
@@ -193,9 +185,9 @@ main {
 100% {background-image: url('../004I.jpg');}
 }
 
-@media only screen and (max-width : 414px) and (orientation : portrait) 
+@media only screen and (max-width : 510px)
 {
 body {background-repeat:no-repeat;background-position:-400px 0px;}
-.word {width: 45vw;font-size:5vw; margin-left:2vw;}
+.word {width: 45vw;font-size:5vw; margin-left:2vw;text-shadow: #000;}
 .sketch {background-size: 140%;width: 45vw; background-position: left 20% center;}
 }
