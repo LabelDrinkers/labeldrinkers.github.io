@@ -68,6 +68,7 @@ a:focus {
 main {
 	position: relative;
 	width: 100%;
+	pointer-events: none;
 }
 
 .content {
@@ -158,6 +159,7 @@ main {
     align-items: center;
     justify-content: left;
     flex-wrap: wrap;
+    pointer-events: none;
     cursor: default;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -178,12 +180,7 @@ main {
   background-size: 100%;
   background-position: left center;
   width: 15vw;
-  cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  pointer-events: none;
 }
 
 @keyframes blink {
