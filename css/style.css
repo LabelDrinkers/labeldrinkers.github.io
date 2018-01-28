@@ -18,7 +18,6 @@ html,
 body {
   font-family: 'slopnessmedium', monospace;
   background: #212121 FAFAFA;
-<<<<<<< Updated upstream
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 100%;
@@ -26,7 +25,6 @@ body {
     -webkit-animation: blink 40s infinite ease-out; /* Webkit */
     -ms-animation: blink 40s infinite ease-out; /* IE */
     animation: blink 40s infinite ease-out; /* Opera and prob css3 final iteration */
-=======
   background-image: url('../sketch.png');
   background-repeat: no-repeat;
   background-size: 20%;
@@ -35,7 +33,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
->>>>>>> Stashed changes
 }
 
 @keyframes blink {
@@ -60,13 +57,8 @@ body {
 a {text-decoration:none;color:black}
 
 .container {
-<<<<<<< Updated upstream
   height: 100%;
   width: 100%;
-=======
-  height:100%;
-  width: 80%;
->>>>>>> Stashed changes
   justify-content: center;
   align-items: center;
   display: flex;
@@ -76,13 +68,9 @@ a {text-decoration:none;color:black}
 img {width: 250px; height: auto; margin-left:80%; margin-top: 30%;}
 
 .text {
-<<<<<<< Updated upstream
-  width: 40%;
-=======
   width: 50%;
   position: absolute;
   margin-top: 35%;
->>>>>>> Stashed changes
   font-weight: 400;
   position: absolute;
   top: 42%;

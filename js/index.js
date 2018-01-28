@@ -78,7 +78,7 @@ var TextScramble = function () {
   return TextScramble;
 }();
 
-var phrases = ['I drink champagne when I win, to celebrate, and I drink champagne when I lose, to console myself.<br />- Napoleon Bonaparte','<font size="300%">Label Drinkers</font>', 'A Global Series Extraordinaire','Starring','One Champagne Sommelier & Decanter World Wine Awards Judge.','One up and coming Drink Wizard with a sense for the finer things in life.','One is inked, one is not.','Together they travel the world to reveal myths, facts and untold stories of the most admired beverage in the world.','Coming 2018','When drinking is not a game.<br />But bloody serious.<br />- The Authors'];
+var phrases = ['I drink champagne when I win, to celebrate, and I drink champagne when I lose, to console myself.<br />- Napoleon Bonaparte','<h1>Label Drinkers</h1>', 'A Global Series Extraordinaire','Starring','One Champagne Sommelier & Decanter World Wine Awards Judge.','One up and coming Drink Wizard with a sense for the finer things in life.','One is inked, one is not.','Together they travel the world to reveal myths, facts and untold stories of the most admired beverage in the world.','Coming 2018','When drinking is not a game.<br />But bloody serious.<br />- The Authors'];
 
 
 var el = document.querySelector('.text');
