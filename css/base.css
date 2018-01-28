@@ -187,7 +187,7 @@ main {
 
 @media only screen and (max-width : 510px)
 {
-body {background-repeat:no-repeat;background-position:-400px 0px;}
+body {background-repeat:no-repeat;background-position:-400px 0px;overflow:hidden;}
 .word {width: 45vw;font-size:5vw; margin-left:2vw;text-shadow: #000;}
-.sketch {background-size: 140%;width: 45vw; background-position: left 20% center;}
+.sketch {background-size: 140%;width: 45vw; background-position: left 20% center;overflow:hidden;}
 }
