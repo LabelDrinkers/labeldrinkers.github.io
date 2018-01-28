@@ -21,6 +21,7 @@ body {
 	overflow: hidden;
 	color: var(--color-text);
 	background-color: #fff;
+        background-repeat:no-repeat;
         background-size: cover;
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
@@ -177,6 +178,12 @@ main {
   background-size: 100%;
   background-position: left center;
   width: 15vw;
+  cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @keyframes blink {
