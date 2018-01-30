@@ -15,7 +15,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 }
 
-html,body {
+body {
         font-family: 'slopnessmedium';
 	min-height: 100vh;
 	overflow: hidden;
@@ -27,6 +27,7 @@ html,body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	animation: blink 40s infinite ease-out;
+	position: fixed;
 }
 
 /* Color schemes */
