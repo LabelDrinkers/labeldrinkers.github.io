@@ -5,26 +5,22 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
     background: #000;
-    left: 20px;
-
 }
 
 .overlay {
   width: 100vw;
   height: 100vh;
-  position: fixed;
 }
 
 .logo {
-  mask-image: url(labels.png) cover no-repeat;
-mask-size: 400px 400px;
-  -webkit-mask-image: url(labels.png);
--webkit-mask-size: 600px 600px;
--webkit-mask-repeat: no-repeat;
--webkit-mask-position: center;
-  position: fixed;
-  z-index: 1;
+-webkit-mask-image: url(labels.png), url(boxar.png);
+-webkit-mask-size: 500px 500px, 101vw 101vh;
+-webkit-mask-repeat: no-repeat, no-repeat;
+-webkit-mask-position: center, center;
+  position: absolute;
+  z-index: 100 !important;
 }
 
 .fullscreen-bg {
