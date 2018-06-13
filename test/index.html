@@ -1,0 +1,2219 @@
+<html ng-app="moodica" ng-controller="ApplicationController as rm" class="wf-soleil-n7-active wf-soleil-n4-active wf-macha-n5-active wf-active"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+
+  <meta charset="utf-8">
+  <title>Moodica</title>
+
+  <!-- build:base -->
+  <base href="https://www.moodica.com/">
+  <!-- endbuild -->
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="Watch relaxing videos that lift your mood, calm anxiety, help you sleep, or set the ambiance in any room. Moodica is free on desktop, Apple TV and Fire TV. Samsung coming soon.">
+  <meta name="viewport" content="width=device-width">
+  <meta name="dramafever:health" content="good">
+
+  <!-- Twitter Card Information -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Watch Oddly Satisfying Videos on Moodica">
+  <meta name="twitter:site" content="@moodica">
+  <meta name="twitter:description" content="Watch relaxing videos that lift your mood, calm anxiety, help you sleep, or set the ambiance in any room. Moodica is free on desktop, Apple TV and Fire TV. Samsung coming soon.">
+  <meta name="twitter:creator" content="@moodica">
+  <meta name="twitter:image:src" content="https://www.moodica.com/builds/35/images/social/twitter_share.jpg">
+
+  <!-- Open-Graph Information -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Watch Oddly Satisfying Videos on Moodica">
+  <meta property="og:site_name" content="Moodica">
+  <meta property="og:description" content="Watch relaxing videos that lift your mood, calm anxiety, help you sleep, or set the ambiance in any room. Moodica is free on desktop, Apple TV and Fire TV. Samsung coming soon.">
+  <meta property="og:image" content="https://www.moodica.com/builds/35/images/social/fb_share.jpg">
+  <meta property="og:url" content="https://www.moodica.com/">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Microsoft Pinned Sites Information -->
+  <meta name="application-name" content="Moodica">
+  <meta name="msapplication-config" content="https://www.moodica.com/builds/35/images/tiles/browserconfig.xml">
+
+<!--
+<script src="https://connect.facebook.net/signals/config/274074479636020?v=2.8.16&amp;r=stable" async=""></script>
+<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MW4GNH6"></script>
+-->
+<script src="https://use.typekit.net/skg4yfh.js"></script>
+  <style type="text/css">.tk-soleil{font-family:"soleil",sans-serif;}.tk-macha{font-family:"macha",sans-serif;}</style>
+<style type="text/css">@font-face{font-family:tk-soleil-n7;src:url(https://use.typekit.net/af/a18a80/0000000000000000000148f6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/a18a80/0000000000000000000148f6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/a18a80/0000000000000000000148f6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-soleil-n4;src:url(https://use.typekit.net/af/ce4be2/0000000000000000000148f1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/ce4be2/0000000000000000000148f1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/ce4be2/0000000000000000000148f1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-macha-n5;src:url(https://use.typekit.net/af/7b4e51/000000000000000000014346/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/7b4e51/000000000000000000014346/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/7b4e51/000000000000000000014346/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}</style>
+<script>try{Typekit.load({ async: true })``;}catch(e){}</script>
+
+  <!-- bower:css -->
+  <!-- bower styles will be automatically inserted here -->
+  <!-- endinject -->
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="builds/35/moodica.min.css">
+  <!-- endinject -->
+
+  <script>
+  window.appConfig = { "application":{"storage":"local","id":"www","url":""},"raven":{"dsn":"https://0e3b213a113e4949914eb67d7c4f7b79@sentry.io/160218"}, "swiftype":{"engineKey":""}, "build": {"id":"35","destination":"dist/builds/35"}, "facebookPixel": {"id":""} };
+
+  // remove videojs default style
+  window.VIDEOJS_NO_DYNAMIC_STYLE = true;
+  </script>
+<style type="text/css">@font-face{font-family:soleil;src:url(https://use.typekit.net/af/a18a80/0000000000000000000148f6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/a18a80/0000000000000000000148f6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/a18a80/0000000000000000000148f6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:soleil;src:url(https://use.typekit.net/af/ce4be2/0000000000000000000148f1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/ce4be2/0000000000000000000148f1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/ce4be2/0000000000000000000148f1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:macha;src:url(https://use.typekit.net/af/7b4e51/000000000000000000014346/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/7b4e51/000000000000000000014346/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/7b4e51/000000000000000000014346/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}</style>
+<!--
+<script id="facebook-jssdk" async="" src="//connect.facebook.net/en_US/sdk.js"></script>
+-->
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style></head>
+<body><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+
+  <application-container><div class="application-container" is-mouse-active="$ctrl.setMouseActive(isActive)">
+  <application-header is-body-mouse-active="$ctrl.isMouseActive"><div class="application-header" ng-class="$ctrl.classes" style="">
+  <div class="application-header__logo" ui-sref="home" href="/">
+    <div class="logo-animation ng-hide" ng-show="$ctrl.isSubscribeActive || $ctrl.isBrowseActive || (!$ctrl.isIntroActive &amp;&amp; $ctrl.isBodyMouseActive)" style=""></div>
+  </div>
+
+  <div class="application-header__about ng-hide" ng-show="$ctrl.isAboutActive || (!$ctrl.isIntroActive &amp;&amp; $ctrl.isBodyMouseActive)" style="">
+    <div class="application-header__about-state" ng-hide="$ctrl.isAboutActive || $ctrl.isSubscribeActive || $ctrl.isBrowseActive">
+      <span class="subheading-1" ng-click="$ctrl.about()">About</span>
+    </div>
+  </div>
+
+  <div class="application-header__subscribe ng-hide" ng-show="$ctrl.isSubscribeActive || (!$ctrl.isIntroActive &amp;&amp; $ctrl.isBodyMouseActive)" style="">
+    <div class="application-header__subscribe-state" ng-hide="$ctrl.isSubscribeActive || $ctrl.isAboutActive || $ctrl.isBrowseActive">
+      <a class="application-header__subscribe-button mo-button mo-button--small mo-button--pulse" ng-click="$ctrl.subscribe()">
+        <span class="subheading-1">Get Updates</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="application-header__close">
+    <div class="application-header__close-state ng-hide" ng-show="$ctrl.isSubscribeActive || $ctrl.isAboutActive || $ctrl.isBrowseActive">
+      <a class="application-header__close-button" ng-click="$ctrl.close()">
+        <i class="icon-close"></i>
+      </a>
+    </div>
+  </div>
+</div>
+</application-header>
+  <!---->
+<div class="application-container__view" ui-view=""><div class="home-view">
+
+  <collection-slider-container slug="'collection-of-collection'" initial-slug="$ctrl.$stateParams.slug" initial-child="$ctrl.$stateParams.child" on-loaded="$ctrl.onSliderLoaded()" on-error="$ctrl.onSliderError()" on-not-found="$ctrl.onSliderItemNotFound()"><collection-slider initial-index="$ctrl.initialIndex" initial-child="$ctrl.initialChild" collection-items="$ctrl.collectionItems"><div class="collection-slider" is-mouse-active="$ctrl.onIsMouseActive(isActive)" mouse-active-delay="5000">
+
+	<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider swiper-container-vertical">
+	<div class="touch-slider__frame is-vertical" ng-class="$ctrl.classes" ng-transclude="">
+		<!----><div class="touch-slider__slide swiper-slide-active" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-active is-current is-selected" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider swiper-container-horizontal">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!----><div class="touch-slider__slide swiper-slide-active" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!----><div class="collection-slider-item__poster" ng-if="$ctrl.getSlidePosterVisibility($index)">
+					<image-loader source="item.images.poster.url" on-loading="$ctrl.onPosterLoading()" on-loaded="$ctrl.onPosterLoaded()"><!----><div class="image-loader" ng-if="$ctrl.isImageLoaded" ng-style="$ctrl.styles" style="background-image: url(&quot;https://imgix-media.moodica.com/art-series/poster/512.jpg&quot;);"></div><!----></image-loader>
+				</div><!---->
+				<!----><div class="collection-slider-item__video" ng-if="$ctrl.getSlideVideoVisibility($index)">
+					<moodica-player series-id="item.id" is-muted="$ctrl.isMuted" on-loading="$ctrl.onVideoLoading()" on-loaded="$ctrl.onVideoLoaded()" on-ended="$ctrl.slideNext()"><div class="moodica-player">
+  <div class="moodica-player__inner">
+
+    <!----><div id="vjs_video_3" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" ng-if="!$ctrl.UserAgentService.isMobile()" class="video-js vjs-paused vjs-controls-disabled vjs-workinghover vjs-user-active" role="region" aria-label="video player"><video class="vjs-tech" ng-if="!$ctrl.UserAgentService.isMobile()" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="vjs_video_3_html5_api" autoplay="" src="blob:https://www.moodica.com/1cdd0226-8771-48ae-80d6-282a4171dc95">
+    </video><div></div><div class="vjs-poster" tabindex="-1" style="background-image: url(&quot;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&quot;);"></div><div class="vjs-text-track-display" aria-live="assertive" aria-atomic="true"><div style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"></div><button class="vjs-big-play-button" type="button" aria-live="polite" title="Play Video"><span class="vjs-control-text">Play Video</span></button><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden" tabindex="-1" role="dialog" aria-labelledby="TTsettingsDialogLabel-vjs_video_3_component_93" aria-describedby="TTsettingsDialogDescription-vjs_video_3_component_93">
+    <div role="document">
+      <div role="heading" aria-level="1" id="TTsettingsDialogLabel-vjs_video_3_component_93" class="vjs-control-text">Captions Settings Dialog</div>
+      <div id="TTsettingsDialogDescription-vjs_video_3_component_93" class="vjs-control-text">Beginning of dialog window. Escape will cancel and close the window.</div>
+      <div class="vjs-tracksettings">
+        <div class="vjs-tracksettings-colors">
+          <fieldset class="vjs-fg-color vjs-tracksetting">
+            <legend>Text</legend>
+            <label class="vjs-label" for="captions-foreground-color-vjs_video_3_component_93">Color</label>
+            <select id="captions-foreground-color-vjs_video_3_component_93">
+              <option value="#FFF" selected="">White</option>
+              <option value="#000">Black</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-text-opacity vjs-opacity">
+              <label class="vjs-label" for="captions-foreground-opacity-vjs_video_3_component_93">Transparency</label>
+              <select id="captions-foreground-opacity-vjs_video_3_component_93">
+                <option value="1" selected="">Opaque</option>
+                <option value="0.5">Semi-Opaque</option>
+              </select>
+            </span>
+          </fieldset>
+          <fieldset class="vjs-bg-color vjs-tracksetting">
+            <legend>Background</legend>
+            <label class="vjs-label" for="captions-background-color-vjs_video_3_component_93">Color</label>
+            <select id="captions-background-color-vjs_video_3_component_93">
+              <option value="#000" selected="">Black</option>
+              <option value="#FFF">White</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-bg-opacity vjs-opacity">
+              <label class="vjs-label" for="captions-background-opacity-vjs_video_3_component_93">Transparency</label>
+              <select id="captions-background-opacity-vjs_video_3_component_93">
+                <option value="1" selected="">Opaque</option>
+                <option value="0.5">Semi-Transparent</option>
+                <option value="0">Transparent</option>
+              </select>
+            </span>
+          </fieldset>
+          <fieldset class="window-color vjs-tracksetting">
+            <legend>Window</legend>
+            <label class="vjs-label" for="captions-window-color-vjs_video_3_component_93">Color</label>
+            <select id="captions-window-color-vjs_video_3_component_93">
+              <option value="#000" selected="">Black</option>
+              <option value="#FFF">White</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-window-opacity vjs-opacity">
+              <label class="vjs-label" for="captions-window-opacity-vjs_video_3_component_93">Transparency</label>
+              <select id="captions-window-opacity-vjs_video_3_component_93">
+                <option value="0" selected="">Transparent</option>
+                <option value="0.5">Semi-Transparent</option>
+                <option value="1">Opaque</option>
+              </select>
+            </span>
+          </fieldset>
+        </div> <!-- vjs-tracksettings-colors -->
+        <div class="vjs-tracksettings-font">
+          <div class="vjs-font-percent vjs-tracksetting">
+            <label class="vjs-label" for="captions-font-size-vjs_video_3_component_93">Font Size</label>
+            <select id="captions-font-size-vjs_video_3_component_93">
+              <option value="0.50">50%</option>
+              <option value="0.75">75%</option>
+              <option value="1.00" selected="">100%</option>
+              <option value="1.25">125%</option>
+              <option value="1.50">150%</option>
+              <option value="1.75">175%</option>
+              <option value="2.00">200%</option>
+              <option value="3.00">300%</option>
+              <option value="4.00">400%</option>
+            </select>
+          </div>
+          <div class="vjs-edge-style vjs-tracksetting">
+            <label class="vjs-label" for="captions-edge-style-vjs_video_3_component_93">Text Edge Style</label>
+            <select id="captions-edge-style-vjs_video_3_component_93">
+              <option value="none" selected="">None</option>
+              <option value="raised">Raised</option>
+              <option value="depressed">Depressed</option>
+              <option value="uniform">Uniform</option>
+              <option value="dropshadow">Dropshadow</option>
+            </select>
+          </div>
+          <div class="vjs-font-family vjs-tracksetting">
+            <label class="vjs-label" for="captions-font-family-vjs_video_3_component_93">Font Family</label>
+            <select id="captions-font-family-vjs_video_3_component_93">
+              <option value="proportionalSansSerif" selected="">Proportional Sans-Serif</option>
+              <option value="monospaceSansSerif">Monospace Sans-Serif</option>
+              <option value="proportionalSerif">Proportional Serif</option>
+              <option value="monospaceSerif">Monospace Serif</option>
+              <option value="casual">Casual</option>
+              <option value="script">Script</option>
+              <option value="small-caps">Small Caps</option>
+            </select>
+          </div>
+        </div> <!-- vjs-tracksettings-font -->
+        <div class="vjs-tracksettings-controls">
+          <button class="vjs-default-button">Defaults</button>
+          <button class="vjs-done-button">Done</button>
+        </div>
+      </div> <!-- vjs-tracksettings -->
+    </div> <!--  role="document" --></div></div><!---->
+
+    <!---->
+
+  </div>
+</div>
+</moodica-player>
+				</div><!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide swiper-slide-next" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!----><div class="collection-slider-item__poster" ng-if="$ctrl.getSlidePosterVisibility($index)">
+					<image-loader source="item.images.poster.url" on-loading="$ctrl.onPosterLoading()" on-loaded="$ctrl.onPosterLoaded()"><!----><div class="image-loader" ng-if="$ctrl.isImageLoaded" ng-style="$ctrl.styles" style="background-image: url(&quot;https://imgix-media.moodica.com/art-series/poster/481.jpg&quot;);"></div><!----></image-loader>
+				</div><!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive" style=""></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Momentum
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Momentum</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Momentum
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Momentum
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()" style="">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()" style="">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+		<!----><div class="collection-slider-item__description" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index" style="">
+			<h4 class="collection-slider-item__title title">Drive Through Ayers Rock, Australia</h4>
+			<span class="collection-slider-item__author subheading-1">20-ONE</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index" style="">
+			<h4 class="collection-slider-item__title title">Train Through Taipei - Zhahu Line</h4>
+			<span class="collection-slider-item__author subheading-1">Sasha SWIM, USED UNDER CC BY</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Driving Across The Golden Gate Bridge in San Francisco</h4>
+			<span class="collection-slider-item__author subheading-1">Sam Cecil</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Flight Through The Swiss Alps</h4>
+			<span class="collection-slider-item__author subheading-1">Ákos Maróy, USED UNDER CC BY</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Drive Through Switzerland</h4>
+			<span class="collection-slider-item__author subheading-1">20-ONE</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Journey through Japan - Chiba Monorail</h4>
+			<span class="collection-slider-item__author subheading-1">2016 ARCHIVE, USED UNDER CC BY</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Journey through Japan - Tokyo Monorail</h4>
+			<span class="collection-slider-item__author subheading-1">2016 ARCHIVE, USED UNDER CC BY</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Train Through Japan - Makita to Matsuoji</h4>
+			<span class="collection-slider-item__author subheading-1">TheACUVE, USED UNDER CC BY</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Drive Through Lake Como, Italy</h4>
+			<span class="collection-slider-item__author subheading-1">20-ONE</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Journey through Japan - Ikegami Monorail</h4>
+			<span class="collection-slider-item__author subheading-1">2016 ARCHIVE, USED UNDER CC BY</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Journey through Japan - Tama Monorail</h4>
+			<span class="collection-slider-item__author subheading-1">2016 ARCHIVE, USED UNDER CC BY</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Journey through Japan - Tokyo Line</h4>
+			<span class="collection-slider-item__author subheading-1">2016 ARCHIVE, USED UNDER CC BY</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()" style="">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive" style="">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide swiper-slide-next" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-adjacent is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider swiper-container-horizontal">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!----><div class="touch-slider__slide swiper-slide-active" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!----><div class="collection-slider-item__poster" ng-if="$ctrl.getSlidePosterVisibility($index)">
+					<image-loader source="item.images.poster.url" on-loading="$ctrl.onPosterLoading()" on-loaded="$ctrl.onPosterLoaded()"><!----><div class="image-loader" ng-if="$ctrl.isImageLoaded" ng-style="$ctrl.styles" style="background-image: url(&quot;https://imgix-media.moodica.com/art-series/poster/506.jpg&quot;);"></div><!----></image-loader>
+				</div><!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive"></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide swiper-slide-next" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!----><div class="collection-slider-item__poster" ng-if="$ctrl.getSlidePosterVisibility($index)">
+					<image-loader source="item.images.poster.url" on-loading="$ctrl.onPosterLoading()" on-loaded="$ctrl.onPosterLoaded()"><!----><div class="image-loader" ng-if="$ctrl.isImageLoaded" ng-style="$ctrl.styles" style="background-image: url(&quot;https://imgix-media.moodica.com/art-series/poster/369.jpg&quot;);"></div><!----></image-loader>
+				</div><!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive"></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive"></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive"></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive"></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive"></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive"></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive"></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="width: 549px;">
+				<!---->
+				<!---->
+				<!-- explore more button -->
+				<div class="collection-slider-item__dimmer ng-hide" ng-show="$ctrl.isSliderDimmerActive"></div>
+				<div class="collection-slider-item__get-link ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+					<get-the-link series-id="item.id" on-success="$ctrl.onLinkCopySuccess()" series-url="$ctrl.shareableLink"><span class="mo-button mo-button--small mo-button--pulse mo-button--bottom mo-button--center" ng-click="$ctrl.copySeriesUrl()">get the link</span></get-the-link>
+				</div>
+			</div><!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        The Colors Of Autumn
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>The Colors Of Autumn</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		The Colors Of Autumn
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		The Colors Of Autumn
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!----><div class="collection-slider-item__description" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index" style="">
+			<h4 class="collection-slider-item__title title">Autumn Afternoon</h4>
+			<span class="collection-slider-item__author subheading-1">Sam Cecil</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index" style="">
+			<h4 class="collection-slider-item__title title">Waterfall In Autumn</h4>
+			<span class="collection-slider-item__author subheading-1">Moodica</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Pumpkin Patch</h4>
+			<span class="collection-slider-item__author subheading-1">Moodica</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Warm Autumn Sun</h4>
+			<span class="collection-slider-item__author subheading-1">Sam Cecil</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Church Of Heavenly Rest</h4>
+			<span class="collection-slider-item__author subheading-1">Sam Cecil</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Fall Scene In New York</h4>
+			<span class="collection-slider-item__author subheading-1">Sam Cecil</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Autumn Leaves In The Park</h4>
+			<span class="collection-slider-item__author subheading-1">Sam Cecil</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Rain On Autumn River</h4>
+			<span class="collection-slider-item__author subheading-1">Moodica</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!----><div class="collection-slider-item__description ng-hide" ng-repeat="item in $ctrl.collectionItems" ng-show="$ctrl.currentIndex === $index">
+			<h4 class="collection-slider-item__title title">Central Park Afternoon</h4>
+			<span class="collection-slider-item__author subheading-1">Sam Cecil</span>
+			<!-- <p ng-show="item.description.short">
+				{{ item.description.short }}
+			</p> -->
+		</div><!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Dissolution
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Dissolution</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Dissolution
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Dissolution
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Calming Creatures
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Calming Creatures</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Calming Creatures
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Calming Creatures
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Zero Gravity
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Zero Gravity</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Zero Gravity
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Zero Gravity
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        ASMR
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>ASMR</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		ASMR
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		ASMR
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Planet Earth
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Planet Earth</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Planet Earth
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Planet Earth
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Satisfying Sorting
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Satisfying Sorting</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Satisfying Sorting
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Satisfying Sorting
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Day At The Beach
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Day At The Beach</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Day At The Beach
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Day At The Beach
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Cityscapes
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Cityscapes</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Cityscapes
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Cityscapes
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Quiet Contemplation
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Quiet Contemplation</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Quiet Contemplation
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Quiet Contemplation
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Zen And Mindfulness 
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Zen And Mindfulness </h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Zen And Mindfulness 
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Zen And Mindfulness 
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Art Therapy
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Art Therapy</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Art Therapy
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Art Therapy
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Light As Air
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Light As Air</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Light As Air
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Light As Air
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Relaxation For Pets
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Relaxation For Pets</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Relaxation For Pets
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Relaxation For Pets
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Botanicals
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Botanicals</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Botanicals
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Botanicals
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Cool Down
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Cool Down</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Cool Down
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Cool Down
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!----><div class="touch-slider__slide" ng-transclude="" ng-repeat="item in $ctrl.collectionItems" style="height: 976px;">
+			<collection-slider-item item="item" index="$index" load-condition="$ctrl.getSlideLoadCondition($index)"> <div class="collection-slider-item is-after is-hidden" ng-class="$ctrl.classes" is-mouse-active="$ctrl.onMouseIsActive(isActive)" mouse-active-delay="2000">
+
+	<!-- video slider -->
+
+	<div class="collection-slider-item__slider" ng-click="$ctrl.select()">
+		<touch-slider initial-slide="$ctrl.initialIndex" options="$ctrl.sliderOptions" on-ready="$ctrl.setSlider(slider)" on-slide-start="$ctrl.setCurrentIndex(index)" on-slide-end="$ctrl.setActiveIndex(index)"><div class="touch-slider">
+	<div class="touch-slider__frame" ng-class="$ctrl.classes" ng-transclude="">
+			<!---->
+		</div>
+</div></touch-slider>
+	</div>
+
+	<!-- category labels -->
+
+  <div class="collection-slider-item__current-mood ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+    <span class="subheading-1">Current mood:
+      <a class="collection-slider-item__browse-link" href="" ng-click="$ctrl.showBrowse()">
+        Hungry
+        <img class="collection-slider-item__caret-icon" ng-src="builds/35/images/svg/browse-caret.svg" alt="browse mood icon" src="builds/35/images/svg/browse-caret.svg">
+      </a>
+    </span>
+  </div>
+
+	<div class="collection-slider-item__category ng-hide" ng-show="$ctrl.isActive &amp;&amp; !$ctrl.isSelected">
+		<h3>Hungry</h3>
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--before ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isBefore">
+		Hungry
+	</div>
+
+	<div class="collection-slider-item__category collection-slider-item__category--after ng-hide" ng-show="$ctrl.isPreviewed &amp;&amp; $ctrl.isAfter">
+		Hungry
+	</div>
+
+	<!-- slider controls -->
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--prev ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slidePrev()">
+		<i class="icon-prev"></i>
+	</a>
+
+	<a class="collection-slider-item__slider-button collection-slider-item__slider-button--next ng-hide" ng-show="$ctrl.isSliderNavigationActive" ng-click="$ctrl.slideNext()">
+		<i class="icon-next"></i>
+	</a>
+
+	<!-- descriptions -->
+
+	<div class="collection-slider-item__descriptions ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<!---->
+	</div>
+
+	<!-- explore -->
+
+	<div class="collection-slider-item__explore mobile-hide ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+		<i class="collection-slider-item__explore-icon icon-explore"></i>
+		<span class="subheading-2">Scroll to Explore</span>
+	</div>
+
+	<!-- fullscreen -->
+
+	<div class="collection-slider-item__fullscreen ng-hide" ng-show="$ctrl.isSliderNavigationActive &amp;&amp; !$ctrl.UserAgentService.isiOS()">
+		<img class="collection-slider-item__expand" ng-show="!$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/expand.svg" src="builds/35/images/svg/expand.svg">
+		<img class="collection-slider-item__collapse ng-hide" ng-show="$ctrl.screenfull.isFullscreen" ng-click="$ctrl.toggleFullscreen()" ng-src="builds/35/images/svg/collapse.svg" src="builds/35/images/svg/collapse.svg">
+	</div>
+
+	<!-- mute button -->
+
+	<mute-button ng-click="$ctrl.toggleMute()" is-slider-labels-active="$ctrl.isSliderLabelsActive" is-muted="$ctrl.isMuted"><div class="mute-button ng-hide" ng-show="$ctrl.isSliderLabelsActive">
+
+  <img class="mute-button__unmute-icon" ng-show="!$ctrl.isMuted" ng-src="builds/35/images/svg/unmute.svg" src="builds/35/images/svg/unmute.svg">
+  <img class="mute-button__mute-icon ng-hide" ng-show="$ctrl.isMuted" ng-src="builds/35/images/svg/mute.svg" src="builds/35/images/svg/mute.svg">
+</div>
+</mute-button>
+
+	<!-- get the link message -->
+
+	<div class="collection-slider-item__message ng-hide" ng-show="$ctrl.isClipboardMessageActive">
+    <p class="mobile-hide">The link URL has copied to your clipboard!</p>
+    <p class="mobile-hide"></p>
+
+    <p class="mobile-display">URL Copied! </p>
+	</div>
+
+	<!-- loading indicator -->
+
+	<!---->
+
+</div>
+</collection-slider-item>
+		</div><!---->
+	</div>
+</div></touch-slider>
+
+</div>
+</collection-slider>
+</collection-slider-container>
+
+  <intro-overlay is-loaded="$ctrl.isSliderLoaded" is-not-found="$ctrl.isSliderItemNotFound" is-failed="$ctrl.isSliderFailed"><!----></intro-overlay>
+
+</div>
+</div>
+  <about-overlay><!---->
+</about-overlay>
+  <subscribe-overlay><!---->
+</subscribe-overlay>
+  <browse-overlay><!---->
+</browse-overlay>
+</div>
+</application-container>
+
+  <!-- bower:js -->
+  <script src="builds/35/libs.min.js"></script>
+  <!-- endinject -->
+
+  <!-- inject:modules -->
+  <script src="builds/35/moodica-bundle.js"></script>
+  <!-- endinject -->
+
+  <!-- inject:partials -->
+  <script src="builds/35/moodica.templates.js"></script>
+  <!-- endinject -->
+
+  <!-- Google Tag Manager -->
+<!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MW4GNH6');</script>
+  <!-- End Google Tag Manager -->
+
+  <script type="text/javascript">
+    //Sentry Config
+    Raven.config('https://0e3b213a113e4949914eb67d7c4f7b79@sentry.io/160218', {
+      release: '35'
+    }).install();
+    //Google Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-5254737-18', 'auto');
+  </script>
+
+-->
+<!--
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","274074479636020");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=274074479636020&amp;ev=PageView&amp;noscript=1"></noscript>
+
+-->
+</body></html>
